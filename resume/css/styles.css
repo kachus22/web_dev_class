@@ -162,7 +162,7 @@ header {
 }
 
 .page {
-  height: 501rem;
+  height: 544rem;
 }
 
 .invisible {
@@ -201,6 +201,7 @@ a {
 }
 
 #arrow {
+  z-index: 1;
   left: 65rem;
   top: -2rem;
 }
@@ -304,6 +305,17 @@ a {
 }
 
 #sun img {
+  height: 21rem;
+  opacity: 0.85;
+}
+
+#pig {
+  z-index: 1;
+  top: -10.3rem;
+  left: 51rem;
+}
+
+#pig img {
   height: 21rem;
   opacity: 0.85;
 }
