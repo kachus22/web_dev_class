@@ -1,0 +1,163 @@
+html, body {
+  height: 100%;
+  font-family:monospace;
+  font-size: 10px;
+}
+body{
+  padding: 0px 50px 0px 50px;
+  margin: 0;
+  color: white;
+  border-left-color: black;
+}
+
+header {
+  padding: 30px;
+  background: url("../img/bg_militar") repeat;
+}
+
+#cover {
+  position: relative;
+  width: 402px;
+  padding: 35px auto;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f7f5d9;
+  border: 5px solid black;
+}
+
+#guide-to {
+  position: relative;
+  width: 600px;
+  margin: 144px auto;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+#guide-to li {
+  text-align: center;
+  text-indent: 0px;
+  font-family: 'Gochi Hand', cursive;
+}
+#guide-to li.alt {
+  font-size: 6.5rem;
+  padding: 0px;
+  padding-top: 5px;
+}
+
+/* Notebook effect credits:
+  https://css-tricks.com/how-to-create-a-notebook-design-with-css/
+ */
+
+.list {
+  width: 100%;
+  margin: 0px;
+  color: #555;
+  background-color: #f7f5d9;
+  font-size: 22px;
+  padding: 0 !important;
+  font-family: courier, monospace;
+  border: 1px solid #dedede;
+}
+
+.list li {
+  list-style: none;
+  border-bottom: 1px dotted #7decf2;
+  text-indent: 25px;
+  height: auto;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.list li:first-child {
+  padding: 60px;
+}
+
+.list li:last-child {
+  opacity: 0;
+}
+
+.list li:last-child {
+  opacity: 0;
+}
+
+.lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 100%;
+  margin-left: 40px;
+}
+
+#main-topic {
+  width:340px;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  position: absolute;
+  top: -12px;
+  padding-left: 35px;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+#main-topic > h1{
+  font-size: 6.5rem;
+  margin-bottom: 0px;
+}
+
+#main-topic > h2{
+  font-size: 3.5rem;
+  margin-top: 65px;
+  margin-bottom: 0px;
+}
+
+#main-topic > h3{
+  text-align: center;
+  font-size: 8.5rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#alert {
+  display: inline-block;
+  position: absolute;
+  top: 116px;
+  left: 30px;
+  background-color: #c42e29;
+  border-radius: 12px;
+  border: 1px solid white;
+  outline: 2px solid black;
+  outline-offset: -8px;
+  transform: rotate(-6deg);
+}
+
+#alert p {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+#description {
+  height: 614px;
+}
+
+.invisible {
+  opacity: 0;
+  margin-bottom: 12px;
+}
+
+.br-radius-25 {
+  border-radius: 25px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.br-black {
+  border: 2px solid black !important;
+}
+
+.color-blue {
+  color: blue;
+}
