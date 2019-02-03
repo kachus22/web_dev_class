@@ -1,0 +1,220 @@
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  color: #4F545F;
+  background-image: linear-gradient(-90deg, #F600FF, #00FFED);
+  display: flex;
+  padding-top: 45px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: #0b98de;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-image: linear-gradient(-90deg, #00FFED, #F600FF);
+  box-shadow: 3px 3px 10px 0px rgba(161,161,161,0.7);
+  z-index: 1;
+}
+nav i {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #17b0cf;
+  padding: 15px;
+  border-radius: 100%;
+}
+nav a:hover {
+}
+
+.container {
+  position: relative;
+  margin: 25px;
+  padding: 10px;
+  width: 400px;
+  /* height: 332px; */
+  background-color: #FEFEFE;
+  border-radius: 3px;
+  opacity: 0.9;
+  box-shadow: 3px 3px 10px 0px rgba(161,161,161,0.7);
+}
+
+.container > h1.title {
+  width: 85%;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin: 10px auto 14px auto;
+}
+
+.container > i.pinned {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  font-size: 25px;
+  top: 25px;
+  right: 18px;
+}
+
+.container:hover > i.pinned {
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.container > i.unpinned {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  font-size: 25px;
+  top: 25px;
+  right: 18px;
+}
+
+.container:hover > i.unpinned {
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.container > i.unpinned {
+  opacity: 0.5;
+}
+
+.container > input {
+  margin-bottom: 15px !important;
+}
+
+h1 {
+  text-align: center;
+}
+
+.list {
+  padding: 10px 15px;
+  /* height: 170px;
+  overflow-y: auto; */
+}
+
+.list > ul {
+}
+
+li {
+  list-style: none;
+  padding: 3px 0px;
+  flex-direction: row;
+  display: flex;
+}
+
+li > label {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+}
+
+li > input[type="checkbox"] {
+  outline: none;
+  cursor: pointer;
+}
+
+li > span, i {
+  padding-left: 10px;
+  align-self: center;
+}
+
+li > span {
+    width: 80%;
+}
+
+li > span:focus + i {
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+li > i {
+  display: none;
+  visibility: hidden;
+}
+
+li:hover > i {
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  margin: auto;
+  padding: 10px;
+  width: 70%;
+  display: block;
+  font-size: 13px;
+  border: 0px;
+  border-bottom: 1px solid #4F545F;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #22B4E2;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #8f919c;
+}
+
+.sticky {
+  position: fixed;
+  background-image: linear-gradient(-90deg, #3AF19D, #22B4E2);
+  /* box-shadow: 2px 2px 3px #999; */
+  box-shadow: 3px 3px 10px 0px rgba(161,161,161,0.7);
+  cursor: pointer;
+  z-index: 1;
+}
+
+#pinnednotes, #allnotes {
+  display: flex;
+  padding-top: 45px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#newnote {
+  bottom: 8vh;
+  right: 8vw;
+  border-radius: 100%;
+  padding: 25px;
+  font-size: 25px;
+}
+
+#newnote:hover + span {
+  display: block;
+  visibility: visible;
+}
+
+#tipnote {
+  position: fixed;
+  display: none;
+  visibility: hidden;
+  bottom: calc(8vh + 80px);
+  right: calc(8vw - 50px);
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.select {
+  color: rgb(0, 0, 190);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

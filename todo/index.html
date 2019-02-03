@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TODO</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+  crossorigin="anonymous">
+</head>
+<body>
+  <script src="js/js.js"></script>
+  <i id="newnote" class="fas fa-plus sticky" onclick="addNote()"></i>
+  <span id="tipnote" class="sticky">Agregar nueva nota</span>
+  <!-- <nav>
+    <i class="fas fa-times" onclick=""></i>
+  </nav> -->
+  <div id="pinnednotes">
+    <div class="container">
+      <h1 class="title" contenteditable="true">Pinned list</h1>
+      <i class="fas fa-thumbtack pinned" onclick="pinNote(this)"></i>
+      <div class="list">
+        <span class="select" onclick="selectAll(this)">Select All</span>
+        <ul>
+          <li>
+            <input type="checkbox" name="todo" value="1" onchange="onChange(this)"
+              autocomplete="off">
+            <span contenteditable="true" onblur="editElement(this)">Hacer laboratorio de web</span>
+            <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
+        </ul>
+        <ul>
+        </ul>
+      </div>
+      <input type="text" name="newitem" onkeypress="onSubmit(this, event)"
+        placeholder=" +    List element">
+    </div>
+  </div>
+  <div id="allnotes">
+    <div class="container">
+      <h1 contenteditable="true" class="title">TO DO</h1>
+      <i class="fas fa-thumbtack unpinned" onclick="pinNote(this)"></i>
+      <div class="list">
+        <span class="select" onclick="selectAll(this)">Select All</span>
+        <ul>
+          <li>
+            <input type="checkbox" name="todo" value="1" onchange="onChange(this)"
+              autocomplete="off">
+            <span contenteditable="true" onblur="editElement(this)">Hacer laboratorio de web</span>
+            <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
+          <li>
+            <input type="checkbox" name="todo" value="2" onchange="onChange(this)"
+              autocomplete="off">
+            <span contenteditable="true" onblur="editElement(this)">ejercicio</span>
+            <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
+          <li>
+            <input type="checkbox" name="todo" value="3" onchange="onChange(this)"
+              autocomplete="off">
+            <span contenteditable="true" onblur="editElement(this)">ir al super</span>
+            <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
+          <li>
+              <input type="checkbox" name="todo" value="5" onchange="onChange(this)"
+                autocomplete="off">
+              <span contenteditable="true" onblur="editElement(this)">tomar 2 litros de agua</span>
+              <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="checkbox" name="todo" value="4" onchange="onChange(this)"
+              autocomplete="off" checked>
+            <span contenteditable="true" class="done" onblur="editElement(this)">preparar de cenar</span>
+            <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
+        </ul>
+      </div>
+      <input type="text" name="newitem" onkeypress="onSubmit(this, event)"
+        placeholder=" +    List element">
+    </div>
+  </div>
+</body>
+</html>
