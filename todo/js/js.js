@@ -150,7 +150,7 @@ function createLi(value, current){
   let itemText = document.createTextNode(value);
   span.appendChild(itemText);
   span.setAttribute('contenteditable', 'true');
-  span.setAttribute('onblur', 'edit(this)');
+  span.setAttribute('onblur', 'editElement(this)');
   // Add icon
   let icon = createIcon();
   li.appendChild(item);

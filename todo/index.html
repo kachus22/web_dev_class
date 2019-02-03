@@ -12,9 +12,10 @@
   <script src="js/js.js"></script>
   <i id="newnote" class="fas fa-plus sticky" onclick="addNote()"></i>
   <span id="tipnote" class="sticky">Agregar nueva nota</span>
-  <!-- <nav>
-    <i class="fas fa-times" onclick=""></i>
-  </nav> -->
+  <nav>
+    <img
+    src="https://sites.google.com/site/tc2026em191/_/rsrc/1547505746195/estudiantes/a00818997egt/SmartSelect_20190114-163913_Facebook.jpg?height=198&width=200" alt="">
+  </nav>
   <div id="pinnednotes">
     <div class="container">
       <h1 class="title" contenteditable="true">Pinned list</h1>
@@ -25,11 +26,17 @@
           <li>
             <input type="checkbox" name="todo" value="1" onchange="onChange(this)"
               autocomplete="off">
-            <span contenteditable="true" onblur="editElement(this)">Hacer laboratorio de web</span>
+            <span contenteditable="true" onblur="editElement(this)">Mandar correo importante</span>
             <i class="fas fa-times" onclick="removeItem(this)"></i>
           </li>
         </ul>
         <ul>
+          <li>
+            <input type="checkbox" name="todo" value="1" onchange="onChange(this)"
+              autocomplete="off" checked>
+            <span contenteditable="true" class="done" onblur="editElement(this)">Agregar funcionalidades extras</span>
+            <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
         </ul>
       </div>
       <input type="text" name="newitem" onkeypress="onSubmit(this, event)"
@@ -43,12 +50,6 @@
       <div class="list">
         <span class="select" onclick="selectAll(this)">Select All</span>
         <ul>
-          <li>
-            <input type="checkbox" name="todo" value="1" onchange="onChange(this)"
-              autocomplete="off">
-            <span contenteditable="true" onblur="editElement(this)">Hacer laboratorio de web</span>
-            <i class="fas fa-times" onclick="removeItem(this)"></i>
-          </li>
           <li>
             <input type="checkbox" name="todo" value="2" onchange="onChange(this)"
               autocomplete="off">
@@ -69,6 +70,12 @@
           </li>
         </ul>
         <ul>
+          <li>
+            <input type="checkbox" name="todo" value="1" onchange="onChange(this)"
+              autocomplete="off" checked>
+            <span contenteditable="true" class="done" onblur="editElement(this)">Hacer laboratorio de web</span>
+            <i class="fas fa-times" onclick="removeItem(this)"></i>
+          </li>
           <li>
             <input type="checkbox" name="todo" value="4" onchange="onChange(this)"
               autocomplete="off" checked>
