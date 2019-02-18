@@ -1,0 +1,160 @@
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  margin: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+#title {
+  height: calc(100vh - 75px);
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title > h1:first-child {
+  color: #b69859;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+h1, h2, h4 {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+select {
+  width: auto;
+  height: 40px;
+  overflow: hidden;
+  background: url("../assets/arrow.png") no-repeat;
+  background-position: right top;
+  background-size: 50px;
+  padding-right: 45px;
+  border: none;
+
+  color: #b69859;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3em;
+  outline: none;
+
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+
+  font-family: 'Rubik', sans-serif;
+  display: block;
+  margin: 0px auto 35px auto;
+}
+
+option {
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+  color: #b69859;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+h3 {
+  color: #b69859;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2em;
+  margin: 10px 0px;
+  display: inline
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+
+span {
+  color: black;
+  margin-left: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+ul {
+  margin-bottom: 60px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+div.winner > h4:first-child {
+  color: #b69859;
+  font-weight: bold;
+}
+
+.category{
+  border-bottom: solid 1px #e1e1e1;
+}
+
+.description {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.nominees-title {
+  margin: 42px 0px 20px 0px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.nominee {
+  font-weight: bold;
+}
+
+.btn {
+  width:90px;
+  height:90px;
+  border-radius:100%;
+  background: #b69859;
+  right:0;
+  bottom:0;
+  position: fixed;
+  margin-right:16px;
+  margin-bottom:16px;
+  border:none;
+  outline:none;
+  color:#FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#switch {
+  padding-top:12px;
+  height: 55px;
+  outline: none;
+  filter: invert(0%);
+}
+
+
+body.night {
+  background-color: black;
+}
+
+body.night h1, body.night h2, body.night h4 {
+  color: white;
+}
+
+body.night #switch {
+  filter: invert(100%);
+}
